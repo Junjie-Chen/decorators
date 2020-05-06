@@ -43,3 +43,7 @@ function logErrorMessage(message: string): Function {
     };
   };
 }
+
+function logParameterIndex(target: any, key: string, index: number): void {
+  console.log(`Parameter is at index ${index}`);
+}

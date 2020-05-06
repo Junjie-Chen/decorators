@@ -13,3 +13,7 @@ class Boat {
     }
   }
 }
+
+function logConstructor(constructor: Function): void {
+  console.log(`Constructor of class Boat is ${constructor}`);
+}

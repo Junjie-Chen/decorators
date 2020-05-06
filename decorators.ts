@@ -23,3 +23,7 @@ function logConstructor(constructor: Function): void {
 function logField(target: any, key: string): void {
   console.log(`Field is ${key}`);
 }
+
+function logColor(target: any, key: string): void {
+  console.log(target[key]);
+}

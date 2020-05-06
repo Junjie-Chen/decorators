@@ -1,5 +1,6 @@
 @logConstructor
 class Boat {
+  @logField
   color: string = 'red';
 
   get getColor(): string {

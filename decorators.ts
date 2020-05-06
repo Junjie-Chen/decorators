@@ -9,7 +9,7 @@ class Boat {
   }
 
   @logErrorMessage('The boat needs to fix')
-  pilot(engine: string, speed: string): void {
+  pilot(@logParameterIndex engine: string, @logParameterIndex speed: string): void {
     if (engine && speed) {
       console.log('Boat is sailing');
     } else {

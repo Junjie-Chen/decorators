@@ -3,6 +3,7 @@ class Boat {
   @logField
   color: string = 'red';
 
+  @logColor
   get getColor(): string {
     return `The color of the boat is ${this.color}`;
   }

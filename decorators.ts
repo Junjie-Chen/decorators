@@ -18,3 +18,7 @@ class Boat {
 function logConstructor(constructor: Function): void {
   console.log(`Constructor of class Boat is ${constructor}`);
 }
+
+function logField(target: any, key: string): void {
+  console.log(`Field is ${key}`);
+}

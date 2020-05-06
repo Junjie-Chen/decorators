@@ -48,4 +48,4 @@ function logParameterIndex(target: any, key: string, index: number): void {
   console.log(`Parameter is at index ${index}`);
 }
 
-new Boat();
+new Boat().pilot('750 kilowatts', '80 knots');

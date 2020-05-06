@@ -1,3 +1,4 @@
+@logConstructor
 class Boat {
   color: string = 'red';
 

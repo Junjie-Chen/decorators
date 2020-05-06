@@ -8,6 +8,7 @@ class Boat {
     return `The color of the boat is ${this.color}`;
   }
 
+  @logErrorMessage('The boat needs to fix')
   pilot(engine: string, speed: string): void {
     if (engine && speed) {
       console.log('Boat is sailing');

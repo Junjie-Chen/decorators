@@ -28,3 +28,17 @@ function logField(target: any, key: string): void {
 function logColor(target: any, key: string): void {
   console.log(target[key]);
 }
+
+function logErrorMessage(message: string): Function {
+  return function(target: any, key: string, desc: PropertyDescriptor): void {
+    const method = desc.value;
+
+    desc.value = function() {
+      try {
+        method();
+      } catch (error) {
+        console.error(message);
+      }
+    };
+  };
+}
